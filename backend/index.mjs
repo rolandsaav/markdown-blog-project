@@ -41,8 +41,6 @@ function myRemarkPlugin() {
         data.hName = 'iframe'
         data.hProperties = {
           src: 'https://www.youtube.com/embed/' + id,
-          width: "100%",
-          height: "100%",
           frameBorder: 0,
           allow: 'picture-in-picture',
           allowFullScreen: true
