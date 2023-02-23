@@ -4,6 +4,10 @@
 
 * Some _emphasis_, **importance**, and `code`.
 
+# Cat videos
+
+::youtube[Video of a cat in a box]{#1jrh9ZVE4Pg}
+
 ## This is a youtube video:
 
 https://www.youtube.com/watch?v=KPoeNZZ6H4s
