@@ -9,10 +9,8 @@
   "author": "Roland Saavedra",
   "license": "ISC",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1",
-    "remark-oembed": "^1.2.2",
-    "to-vfile": "^6.1.0"
+    "remark": "^14.0.2",
+    "remark-directive": "^2.0.1",
+    "remark-parse": "^10.0.1"
   }
 }
