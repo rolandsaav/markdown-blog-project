@@ -1,15 +1,25 @@
-const remark = require('remark');
-const remarkOembed = require('remark-oembed');
-const vfile = require('to-vfile');
+import remarkParse from "remark-parse";
+import remarkDirective from "remark-directive";
+import { remark } from "remark";
+import { read, write } from "to-vfile";
+import {unified} from "unified"
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+import {writeFile } from "fs";
 
-const src = vfile.readSync('./markdown.md')
-
-console.log(src)
 
 
+main();
 
+async function main(){
+  const file = await unified()
+    .use(remarkParse)
+    .use(remarkDirective)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(await read('markdown.md'))
 
-remark()
-  .use(require('remark-html'))
-  .use(remarkOembed)
-  .process(src, (err, file) => vfile.writeSync(file));
+  file.basename = "output.html";
+  await write(file);
+  console.log(String(file));
+}
