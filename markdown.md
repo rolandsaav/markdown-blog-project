@@ -10,7 +10,7 @@
 
 ## This is a youtube video:
 
-https://www.youtube.com/watch?v=KPoeNZZ6H4s
+::youtube[Video of something]{#KPoeNZZ6H4s}
 
 ## This is a photo:
 

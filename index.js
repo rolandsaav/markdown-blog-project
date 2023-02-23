@@ -6,6 +6,7 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit"
 
+console.log(test)
 main();
 
 async function main(){
