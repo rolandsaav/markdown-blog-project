@@ -4,12 +4,13 @@
   "description": "testing remark and plugins for blog use",
   "exports": "./index.js",
   "scripts": {
-    "test": "node index.js"
+    "dev": "nodemon server.js"
   },
   "type": "module",
   "author": "Roland Saavedra",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",
@@ -19,5 +20,8 @@
     "to-vfile": "^7.2.4",
     "unified": "^10.1.2",
     "unist-util-visit": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

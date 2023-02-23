@@ -6,20 +6,19 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit"
 
-main();
 
-async function main(){
+export default async function mdToHtml(markdownFile){
   const file = await unified()
     .use(remarkParse)
     .use(remarkDirective)
     .use(myRemarkPlugin)
     .use(remarkRehype)
     .use(rehypeStringify)
-    .process(await read('markdown.md'))
+    .process(await read(markdownFile))
 
   file.basename = "output.html";
   await write(file);
-  console.log(String(file));
+  return String(file);
 }
 
 function myRemarkPlugin() {

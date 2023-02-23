@@ -1,6 +1,6 @@
 # Hello & World
 
-> A block quote.
+> A block quote. A longer block quote
 
 * Some _emphasis_, **importance**, and `code`.
 
@@ -14,7 +14,7 @@
 
 ## This is a photo:
 
-https://www.flickr.com/photos/pedrocaetano/27432477888
+![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)
 
 ## This is a tweet:
 
